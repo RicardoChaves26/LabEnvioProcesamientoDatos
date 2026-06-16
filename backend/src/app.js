@@ -17,5 +17,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`$${process.env.NAME} ejecutandose en http://localhost:${PORT}`);
+    console.log(`${NAME} ejecutandose en http://localhost:${PORT}`);
 });
