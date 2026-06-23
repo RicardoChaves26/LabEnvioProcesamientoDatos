@@ -1,3 +1,26 @@
+//SERVER_NAME="Servidor de envio y procesamiento de datos"
+//SERVER_VERSION="1.0.0"
+//SERVER_DESCRIPTION="Servidor para recibir y enviar datos"
+//SERVER_PORT=4000
+
+//Este es el .env que se encuetra dentro de backend. 
+
+//Comandos usados para crear: 
+    //npm install express
+    //npm install dotenv
+    //npm install cors
+    //npm install -D nodemon
+
+    //npm install morgan
+
+        //Correr: 
+            //npm start
+
+
+    //.gitignore
+        //node_modules/
+        //.env
+
 import dotenv from "dotenv"; //Si la ruta del .env en otro .env, "dotenv/config(.env.development)"
 import express from "express";
 import cors from "cors";
