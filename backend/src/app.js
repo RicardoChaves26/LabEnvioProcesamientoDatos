@@ -21,6 +21,37 @@
         //node_modules/
         //.env
 
+
+//Configuracion BD.
+
+//services:
+//  mysql:
+//    image: mysql:8.0
+//    container_name: mysql_appnode
+//    restart: always
+//    environment:
+//      MYSQL_ROOT_PASSWORD: root
+//     MYSQL_DATABASE: appnode
+//    ports:
+//      - "3306:3306"
+//    volumes:
+//      - mysql_appnode_data:/var/lib/mysql
+
+//  phpmyadmin:
+//    image: phpmyadmin/phpmyadmin
+//    container_name: phpmyadmin_appnode
+//    restart: always
+//    environment:
+//      PMA_HOST: mysql
+//      PMA_PORT: 3306
+//    ports:
+//      - "8080:80"
+//    depends_on:
+//      - mysql
+
+//volumes:
+//  mysql_appnode_data:
+
 import dotenv from "dotenv"; //Si la ruta del .env en otro .env, "dotenv/config(.env.development)"
 import express from "express";
 import cors from "cors";
