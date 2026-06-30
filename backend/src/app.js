@@ -25,7 +25,8 @@ import dotenv from "dotenv"; //Si la ruta del .env en otro .env, "dotenv/config(
 import express from "express";
 import cors from "cors";
 
-import parqueoRoutes from "./routes/parqueo.routes.js"; //Se utiliza para llamar "parqueoRoutes" desde el app.use
+import parqueoRoutes from "./routes/parqueo.routes.js"; //Se utiliza para llamar "parqueoRoutes" desde el app.useS
+import usuarioRoutes from "./routes/usuario.routes.js";
 
 dotenv.config();
 
@@ -48,6 +49,9 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/parqueo", parqueoRoutes); //Esto permite llamar la funcion de parqueoCotroller
+
+app.use("/api/usuarios", usuarioRoutes); //Se utiliza la ruta de la API para acceder a las rutas de la API, se llama a la función usuarioRoutes que se encuentra en el archivo usuario.routes.js, para que el front-end pueda acceder a las rutas de la API
+//Para postman {"nombre": "Juan Pérez","correo": "juan.perez@example.com","contrasena": "Password123","confirmacion": "Password123"}
 
 //PARA POSTMAN {"placa": "123","tipo": "carro", "horas":3, "minutos":6}
 
