@@ -22,7 +22,7 @@
         //.env
 
 
-//Configuracion BD.
+//Configuracion BD. (docker-compose.yaml)
 
 //services:
 //  mysql:
