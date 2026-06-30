@@ -6,10 +6,13 @@
 //Este es el .env que se encuetra dentro de backend. 
 
 //Comandos usados para crear: 
+    //npm init -y
     //npm install express
     //npm install dotenv
     //npm install cors
     //npm install -D nodemon
+    //npm install bcrypt
+    //docker compose up -d
 
     //npm install morgan
 
@@ -21,6 +24,12 @@
         //node_modules/
         //.env
 
+        
+    //package.json
+    //"start": "node src/app.js",
+    //"dev": "nodemon src/app.js"
+     
+    // "type": "module",
 
 //Configuracion BD. (docker-compose.yaml)
 
